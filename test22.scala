@@ -11,7 +11,7 @@ object Test{
 
 	def unapply(x:Int):Option[Int]={
 		if(x%2==0){
-			return Some(x%2)
+			return Some(x/2)
 		}else{
 			return None
 		}
