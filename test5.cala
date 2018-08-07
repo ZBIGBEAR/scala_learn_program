@@ -1,0 +1,17 @@
+object Test{
+	def main(args:Array[String]) = {
+		var n : Int = 5;
+		println(n+"!="+jiec(n));
+	}
+
+	def jiec(n:Int): Int = {
+		def jie(n:Int,c:Int) : Int = {
+			if(n <= 1){
+				return c;
+			}else{
+				return jie(n-1,c*n);
+			}
+		}
+		return jie(n,1);
+	}
+}
